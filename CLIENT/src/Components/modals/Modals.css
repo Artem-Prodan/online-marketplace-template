@@ -1,0 +1,8 @@
+.modal,
+.modal-backdrop {
+  z-index: 9999 !important;
+}
+
+.custom-modal-z {
+  z-index: 9999 !important;
+}

@@ -1,0 +1,52 @@
+.cart-tab {
+  position: fixed;
+  top: 56px;
+  right: -400px;
+  width: 400px;
+  height: calc(100% - 56px);
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.3s ease;
+  z-index: 8000;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.cart-tab.open {
+  right: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.cart-content {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 2.5rem;
+  padding-right: 5px;
+}
+
+.process-order-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: rgb(143, 114, 222);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+}
+
+.process-order-btn:hover {
+  background-color: rgb(90, 65, 153);
+}
